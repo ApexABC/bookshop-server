@@ -42,7 +42,7 @@ function setupSocket(server) {
       const list = await getMessageList(mes.toUserId)
       socket.emit(String(mes.toUserId), list)
     })
-    console.log('有用户已连接socket')
+    console.log('有用户已连接socket', userId)
   })
 }
 async function getMessageList(userId) {
