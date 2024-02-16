@@ -1,7 +1,8 @@
 const mysql = require('mysql2')
+const { MYSQL_HOST, MYSQL_PORT } = require('../config/serve')
 const connectionPoll = mysql.createPool({
-  host: '120.79.3.170',
-  port: 3306,
+  host: `${MYSQL_HOST}`,
+  port: `${MYSQL_PORT}`,
   database: 'bookshop',
   user: 'root',
   password: 'Mysql123!',
