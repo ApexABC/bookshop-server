@@ -48,7 +48,7 @@ class BooksController {
   }
   async deleteBook(ctx, next) {
     const { id } = ctx.request.params
-    const result = await booksService.delteBookInfo(id)
+    const result = await booksService.deleteBookInfo(id)
     return (ctx.body = {
       code: 201,
       message: '删除书籍成功',

@@ -40,7 +40,7 @@ class BooksService {
     const [result] = await connection.execute(statement, [name, filename, author, describe, rate, pubtime, publisher, price, id])
     return result
   }
-  async delteBookInfo(id) {
+  async deleteBookInfo(id) {
     const statement = 'DELETE FROM books WHERE id = ?'
     const [result] = await connection.execute(statement, [id])
     return result
