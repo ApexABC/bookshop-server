@@ -5,7 +5,8 @@ const connectionPoll = mysql.createPool({
   port: `${MYSQL_PORT}`,
   database: 'bookshop',
   user: 'root',
-  password: 'Mysql123!',
+  // password: 'Mysql123!',
+  password: '123456789',
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
